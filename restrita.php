@@ -16,10 +16,8 @@ if (!isset($_SESSION['usuario_id'])) {
 </head>
 <body>
 
-    <header>
-        <!--  -->
-    </header>
-    <main class="container mt-5">
+    <?php require('header.php') ?>  
+    <main class="container mt-4">
         <h1>Seja Bem-vindo, <?= $_SESSION['usuario_nome'] ?>!</h1>
         <a href="logout.php">Sair</a>
     </main>
